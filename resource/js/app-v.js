@@ -4,16 +4,20 @@ let bclose = document.getElementsByClassName("close")[0];
 let blogin = document.getElementById("lg");
 let flogin = document.querySelector("#myModalv1 > form > div:nth-child(1) > button");
 let bcancel = document.querySelector("#cancel > button");
-let ava2 = document.querySelector("body > header > div.login-area > img:nth-child(2)");
-let ava1 = document.querySelector("body > header > div.login-area > img:nth-child(1)");
+let ava2 = document.querySelector("body > header > div > div.login-area > img:nth-child(2)");
+let ava1 = document.querySelector("body > header > div > div.login-area > img:nth-child(1)");
 let bcancelv2 = document.querySelector("#myModalv2 > form > div.sign-cancel > button:nth-child(2)");
 let bsignup = document.querySelector("#sg");
 let bclosev2 = document.querySelector("#myModalv2 > form > div.containerv1 > span");
 let bsubsign = document.querySelector("#sign");
+let blgbt = document.getElementById("lg-bt");
+
+
 
 ava2.style.display = "none";
 bmodalv1.style.display = "none";
 bmodalv2.style.display = "none";
+blgbt.style.display="none";
 
 
 bclose.onclick = function (el) {
