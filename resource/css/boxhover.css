@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif!important;
+    z-index: 99;
+}
+.boxHover{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.boxHover .box{
+    position: relative;
+    width: 330px;
+    height: 496.8px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    border-radius: 4px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    z-index: auto;
+}
+.boxHover .box .icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 1s;
+}
+.boxHover .box .icon{
+    box-shadow: 0 0 0 0 #03acfa;
+    background:#03acfa;
+}
+.boxHover .box:hover .icon{
+    box-shadow: 0 0 0 496.8px #03acfa;
+}
+.boxHover .box .content{
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+.boxHover .box:hover .content {
+    color: #fff;
+}
+.boxHover .box .content h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
+}
+.boxHover .box .content p{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+main a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+
+}
+main a:hover{
+    transition: 0.5s all 0s ease;
+    color: rgb(240, 6, 6);
+}
+#popup{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  /* visibility: hidden; */
+}
+#popup1{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* visibility: hidden; */
+  }
+  #popup2{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* visibility: hidden; */
+  }
+  #popup3{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* visibility: hidden; */
+  }
+  #popup4{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* visibility: hidden; */
+  }
+  #popup5{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* visibility: hidden; */
+  }
+  #popup6{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* visibility: hidden; */
+  }
+  #popup7{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* visibility: hidden; */
+  }
+  #popup8{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* visibility: hidden; */
+  }
+  #popup9{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* visibility: hidden; */
+  }
+  #popup10{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* visibility: hidden; */
+  }
+  #popup11{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* visibility: hidden; */
+  }
+
+.popCont{
+    width: 500px;
+    height: 300px;
+    /* cái này em mới thêm cho nó ra giữa */
+    margin: 15% auto 0%;
+
+    color: #000;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    border-radius: 4px;
+    z-index: 9999;
+}
+.popCont p {
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 5px;
+    padding-top: 5px;
+}
+.popCont li {
+    color: #000;
+}
+.popCont a {
+    margin-left:410px ;
+    margin-top: 35px;
+}
+.popCont a:hover {
+    color: rgb(241, 6, 6);
+}

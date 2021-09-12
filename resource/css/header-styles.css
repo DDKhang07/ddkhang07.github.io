@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+header{
+    display: flex;
+    height: 200px;
+    background-color: #151414;
+    background-size: cover;
+    background-position: center;
+    /* vh- view height */
+    background-attachment: fixed;
+    z-index: 999;
+    justify-content: center;
+}
+.logo{
+    cursor: pointer;
+    width: 150px;
+    margin: 9px 15px; 
+    background: #151414 ;
+}
+.logo img{
+  width: 150px;
+}
+.slogan{
+    width: 1040px;
+    display: flex;
+    flex-direction: column;
+    margin:  0px 20px;
+    height: fit-content;
+}
+.slogan p{
+    cursor: pointer;
+    width: fit-content;
+    background: linear-gradient(145deg, #C1292E 15%, #e75a5e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-size: 300%;
+    letter-spacing: 3px;
+}
+.slogan marquee{
+    cursor: pointer;
+    color: #C1292E;
+    background: #F9F8F8;
+    width: 800px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    letter-spacing: 5px;
+    font-size: 150%;
+    border-radius: 20px;
+
+}
+.login-area{
+    width: 346px;
+    display: flex;
+    flex-direction: column;
+}
+.login-area img{
+    background: #F9F8F8;
+    margin: 40px auto 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.login-button {
+    display: flex;
+}
+.login-button button{
+    width: 50%;
+    margin: 0px 10px;
+    font-size: 150%;
+    background-color:#7be7ac ;
+    color:#191970;
+    border-radius: 50px;
+    border: 3px solid #32b86e;
+    padding: 5px 10px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+.login-button button:hover{
+    background-color:#32b86e;
+}
+.modalv1{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 3;
+}
+.containerv1 {
+  background-color: #fff;
+  margin: 5% auto 0%;
+  padding: 10px;
+  border: 1px solid #32b86e;
+  width: 30%;
+  position: relative;
+  border-radius: 4px;
+}
+.containerv1 span.close{
+  background-color: #fff;
+  font-size: 32px;
+  height: 25px;
+  color:#000;
+  font-weight: bold;
+  position:absolute;
+  right: 10px;
+  top: 0;
+}
+.containerv1 span.close:hover{
+  color: red;
+  cursor: pointer;
+  text-decoration: none;
+}
+.containerv1 button{
+    width: 100%;
+    font-size: 150%;
+    background-color:#7be7ac ;
+    color:#191970;
+    border-radius: 15px;
+    border: 3px solid #32b86e;
+    padding: 5px 10px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+.containerv1 hr{
+  margin-bottom: 10px;
+}
+
+.containerv1 button:hover{
+  background-color:#32b86e;
+}
+  input[type=text], input[type=password] {
+    color:#191970 ;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #32b86e;
+    box-sizing: border-box;
+  }
+  #cancel button{
+    width: auto;
+    padding: 10px 18px;
+  }
+  #cancel button:hover{
+    background-color: #f44336;
+  }
+  #cancel{
+    margin-top: 0px;
+  }
+.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  #sign:hover {
+    background-color:#32b86e; 
+  }
+  .sign-cancel{
+    display: flex;
+    background-color: #fff;
+  margin: 0% auto;
+  padding: 10px;
+  border: 1px solid #32b86e;
+  width: 30%;
+  position: relative;
+  border-radius: 4px;
+  }
+  .sign-cancel button{
+    margin: 0px 5px;
+    background-color:#7be7ac ;
+    color:#191970;
+    border-radius: 15px;
+    border: 3px solid #32b86e;
+    padding: 5px 10px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    width: 50%;
+  }
+  #myModalv2 > form > div.sign-cancel > button:nth-child(2):hover{
+    background-color: #f44336;
+  }
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+.footer {
+  height: 20%;
+  background-color: #151414;
+  box-sizing: border-box;
+  font-size: large; 
+}
+
+.footer div { 
+  padding-left: 30px;
+  font-family:sans-serif;
+  text-align:center;
+  line-height: 30px;
+}
+.footer h1{
+  margin-top: 20px;
+  color: #F9F8F8;
+}
+.footer h3 {
+  color: #F9F8F8;
+}
+.footer h5 {
+  color: #F9F8F8;
+}
+
+.footer p, li {
+  display: flex;
+  justify-content: center;
+  text-align:center;
+  flex-wrap: wrap;
+  font-family:sans-serif;
+  color: #C1292E ;
+  word-spacing: 2px;
+  line-height: 30px;
+  font-weight: 300;  
+}
