@@ -6,65 +6,94 @@
 }
 header{
     display: flex;
-    height: 200px;
-    background-color: #151414;
-    background-size: cover;
+    flex-direction: column;
+    height: 150px;
+    background: linear-gradient(-45deg, #12c2e9, #c471ed, #f64f59,#12c2e9 ); 
+    background-size: 400% 400%;
     background-position: center;
-    /* vh- view height */
     background-attachment: fixed;
-    z-index: 999;
     justify-content: center;
+    animation: animate 10s ease-in-out infinite;
+}
+@keyframes animate{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+body > header > div > div.slogan > p:nth-child(2){
+  margin-left: 413px;
+}
+.upper{
+  display: flex;
+  height: 110px;
 }
 .logo{
     cursor: pointer;
-    width: 150px;
-    margin: 9px 15px; 
-    background: #151414 ;
+    width: 100px;
+    height: 100px;
+    margin: 0px 25px 0px; 
+    background: none ;
 }
 .logo img{
-  width: 150px;
+  width: 100px;
 }
 .slogan{
-    width: 1040px;
-    display: flex;
-    flex-direction: column;
-    margin:  0px 20px;
-    height: fit-content;
+  width: 1040px;
+  display: flex;
+  flex-direction: column;
+  margin:  0px 20px;
+  height: fit-content;
 }
 .slogan p{
-    cursor: pointer;
-    width: fit-content;
-    background: linear-gradient(145deg, #C1292E 15%, #e75a5e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-transform: uppercase;
-    font-size: 300%;
-    letter-spacing: 3px;
+  
+  padding-left: 80px;
+  font-family: sans-serif;
+  color: transparent;
+  cursor: pointer;
+  width: fit-content;
+  font-weight: bold ;
+  text-transform: uppercase;
+  font-size: 300%;
+  letter-spacing: 3px;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.5) ;
 }
-.slogan marquee{
+
+marquee{
+    font-family: sans-serif;
     cursor: pointer;
-    color: #C1292E;
-    background: #F9F8F8;
-    width: 800px;
-    margin-top: 10px;
-    margin-bottom: 35px;
+    color: transparent;
+    width: 100%;  
+    margin-top: 0px;
+    margin-bottom: 10pxpx;
     letter-spacing: 5px;
     font-size: 150%;
-    border-radius: 20px;
-
+    font-weight: bold;
+    -webkit-text-stroke: 0.4px rgba(255, 255, 255, 0.9) ;
+    
 }
+
 .login-area{
+  
     width: 346px;
     display: flex;
     flex-direction: column;
 }
 .login-area img{
     background: #F9F8F8;
-    margin: 40px auto 20px;
+    margin: 10px auto 20px;
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
 }
+
 .login-button {
     display: flex;
 }
