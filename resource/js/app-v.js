@@ -4,7 +4,6 @@ let bclose = document.getElementsByClassName("close")[0];
 let blogin = document.getElementById("lg");
 let flogin = document.querySelector("#myModalv1 > form > div:nth-child(1) > button");
 let bcancel = document.querySelector("#cancel > button");
-let ava2 = document.querySelector("body > header > div > div.login-area > img:nth-child(2)");
 let ava1 = document.querySelector("body > header > div > div.login-area > img:nth-child(1)");
 let bcancelv2 = document.querySelector("#myModalv2 > form > div.sign-cancel > button:nth-child(2)");
 let bsignup = document.querySelector("#sg");
@@ -14,12 +13,13 @@ let blgbt = document.getElementById("lg-bt");
 
 
 
-ava2.style.display = "none";
+
 bmodalv1.style.display = "none";
 bmodalv2.style.display = "none";
-blgbt.style.display="none";
 
-
+ava1.onclick = function () {
+    blgbt.classList.toggle("show");
+}
 bclose.onclick = function (el) {
     bmodalv1.style.display = "none";
 }
@@ -40,39 +40,36 @@ bclosev2.onclick = function (el) {
 
 }
 
-let join = { username: "abcde", pass: 12345 };
-// var user_data= [
-//     join
-// ];
-var v = [0];
-flogin.onclick = function (v) {
+let vu = { username: "abcde", pass: 12345 };
+
+
+
+flogin.onclick = function () {
     let u = document.getElementById("user-name").value;
     let p = document.getElementById("user-pass").value;
-    if (u != join.username || p != join.pass) {
-        alert("TÊN ĐĂNG NHẬP HOẶC MẬT KHÂU KHÔNG ĐÚNG");
+    if ((u == vu.username && p != vu.pass) ) {
+
+        alert("MẬT KHẨU KHÔNG ĐÚNG");
     }
-    else if( u == join.username && p == join.pass){
-        v[0]=1;
+    else if ((u != vu.username) ) {
+        alert("TÊN TÀI KHOẢN KHÔNG TỒN TẠI");
+    }
+    else if ((u == vu.username && p == vu.pass) ) {
         alert("ĐĂNG NHẬP THÀNH CÔNG");
     }
 }
-// alert(v);
-if (v[0]==1){
-    ava2.style.display = "block";
-    ava1.style.display = "none";
-}
+
+
 bsubsign.onclick = function () {
     let u = document.getElementById("user-name2").value;
     let p = document.getElementById("user-pass2").value;
     let rp = document.getElementById("repeat-pass").value;
-    if (u == join.username) {
+    if (u == vu.username ) {
         alert("TÊN TÀI KHOẢN ĐÃ ĐƯỢC SỬ DỤNG");
     }
-    else if (u != join.username && u != undefined) {
+    else if (u != vu.username ) {
         if (p == rp && p != undefined) {
             alert("TẠO TÀI KHOẢN THÀNH CÔNG");
-            ava2.style.display = "block";
-            ava1.style.display = "none";
         }
         else {
             alert("MẬT KHẨU XÁC NHẬN KHÔNG TRÙNG KHỚP");

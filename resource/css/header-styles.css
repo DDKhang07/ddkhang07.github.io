@@ -42,6 +42,7 @@ body > header > div > div.slogan > p:nth-child(2){
 }
 .logo img{
   width: 100px;
+  padding-left: 30px;
 }
 .slogan{
   width: 1040px;
@@ -74,16 +75,15 @@ marquee{
     letter-spacing: 5px;
     font-size: 150%;
     font-weight: bold;
-    -webkit-text-stroke: 0.4px rgba(255, 255, 255, 0.9) ;
-    
+    -webkit-text-stroke: 0.4px rgba(255, 255, 255, 0.9) ; 
 }
 
 .login-area{
-  
     width: 346px;
     display: flex;
     flex-direction: column;
 }
+
 .login-area img{
     background: #F9F8F8;
     margin: 10px auto 20px;
@@ -95,7 +95,8 @@ marquee{
 }
 
 .login-button {
-    display: flex;
+    display: none;
+    z-index: 10001;
 }
 .login-button button{
     width: 50%;
@@ -111,8 +112,16 @@ marquee{
     cursor: pointer;
     transition: all 0.5s ease 0s;
 }
+.show{
+  display: flex;
+}
 .login-button button:hover{
     background-color:#32b86e;
+}
+
+body > header > div > div.login-area > img:nth-child(1):hover{
+  box-shadow: 0 0 0 500px rgba(0,0,0,0.4);
+  z-index: 10000;
 }
 .modalv1{
   position: fixed;
